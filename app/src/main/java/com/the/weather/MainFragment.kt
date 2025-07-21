@@ -197,7 +197,7 @@ class MainFragmnet : Fragment() {
 
     private fun requestWetherData(city: String) {
         val url = "https://api.weatherapi.com/v1/forecast.json" +
-                "?key=$API_KEY&q=$city&days=3&api=no&alerts=no"
+                "?key="
         val queue = Volley.newRequestQueue(context)
 
         val stringRequest = StringRequest(Request.Method.GET,
